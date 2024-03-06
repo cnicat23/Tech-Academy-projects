@@ -1,0 +1,157 @@
+.footer {
+  background-color: var(--Basic-200, #f7f9fc);
+  width: 100vw;
+  height: 40.3rem;
+  margin-top: 11.2rem;
+}
+
+.footer-descr {
+  @include flex(space-between);
+  padding-top: 5.7rem;
+}
+.footer-fs-poster {
+  @include flex($align: center, $gap: 1.6rem);
+
+  h1 {
+    color: var(--Basic-700, #2e3a59);
+    font-family: "Euclid-Circular A-Bold600";
+    @include font(2.4rem, 3.2rem);
+  }
+}
+.footer-fs-poster-descr {
+  width: 20.8rem;
+  color: var(--Basic-700, #2e3a59);
+  @include font(1.6rem, 2.4rem);
+  padding-top: 3.2rem;
+}
+.info {
+  @include flex($align: center, $gap: 1.2rem);
+  padding-top: 2.4rem;
+
+  p {
+    color: var(--Basic-700, #2e3a59);
+    @include font(1.6rem, 2.4rem);
+  }
+}
+.footer-social-networks {
+  @include flex($gap: 4.8rem);
+  padding-top: 4.8rem;
+
+  img:hover {
+    background-color: #edf1f7;
+    border-radius: 100vw;
+    transform: scale(1.8);
+    transition: 0.5s;
+  }
+}
+h1 {
+  color: var(--Basic-700, #2e3a59);
+  @include font(2rem, 2.8rem);
+}
+
+.footer-descr {
+  ul {
+    @include flex($gap: 1.6rem, $direction: column);
+    padding-top: 2.4rem;
+
+    color: var(--Basic-700, #2e3a59);
+    @include font(1.6rem, 2.4rem);
+  }
+}
+
+.rights {
+  @include flex(space-between, center, $gap: 1.2rem);
+  padding-top: 5.6rem;
+
+  p {
+    color: var(--Basic-700, #2e3a59);
+    @include font(1.6rem, 2.4rem);
+  }
+
+  .rights-left {
+    @include flex($align: center, $gap: 0.8rem);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .rights-right {
+    @include flex($gap: 3.2rem);
+  }
+}
+
+.footer-line {
+  display: none;
+}
+
+@media screen and (max-width: 36.1rem) {
+  .footer {
+    position: relative;
+    height: 100.7rem;
+    margin-top: 8.8rem;
+  }
+
+  .footer-descr {
+    @include flex(space-between, center, 4rem, column);
+    padding-top: 5.7rem;
+    text-align: center;
+  }
+  .footer-fs-poster {
+    @include flex(center, $gap: 1.46rem);
+    h1 {
+      @include font(2.18rem, 2.91rem);
+    }
+  }
+
+  .footer-fs-poster-descr {
+    width: 27.8rem;
+    text-align: center;
+  }
+
+  .contact {
+    @include flex($align: center, $direction: column);
+  }
+
+  .info {
+    @include flex($align: center);
+  }
+
+  .footer-descr {
+    h1 {
+      color: var(--Basic-700, #2e3a59);
+      @include font(2rem, 2.8rem);
+    }
+  }
+
+  .footer-descr {
+    ul {
+      @include flex($gap: 1.2rem, $direction: column);
+    }
+  }
+
+  .footer-line {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 0.1rem;
+    background-color: var(--Basic-300, #edf1f7);
+    margin-top: -4.8rem;
+  }
+
+  .rights {
+    @include flex(center, center);
+    padding-top: 4.9rem;
+
+    p {
+      @include font(1.6rem, 2.4rem);
+    }
+
+    .rights-left {
+      @include flex($align: center, $gap: 0.8rem);
+    }
+
+    .rights-right {
+      display: none;
+    }
+  }
+}

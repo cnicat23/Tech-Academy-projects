@@ -1,0 +1,53 @@
+.fs-poster-feature {
+  position: relative;
+  background-color: var(--danger-100, #fff2f2);
+  width: 100vw;
+  margin-top: 56.9rem;
+  @include flex(center);
+
+  .fs-poster-feature-descr {
+    padding: 17.6rem 0 16rem 0;
+    width: 80rem;
+    color: var(--basic-800, #222b45);
+    @include font(2.4rem, 4rem, center);
+  }
+
+  .rectangle-circle {
+    @include position(39.2rem, 35.2rem);
+  }
+
+  .rectangle-right {
+    @include position(33.5rem, 112rem);
+  }
+
+  .circle {
+    @include position(32.1rem, 21.6rem);
+  }
+}
+
+@media screen and (max-width: 36.1rem) {
+  .fs-poster-feature {
+    width: 36rem;
+    margin-top: 7.2rem;
+
+    .fs-poster-feature-descr {
+      position: relative;
+      z-index: 1;
+      padding: 6.4rem 0 11.2rem 0;
+      margin-left: 1.6rem;
+      width: 32.8rem;
+    }
+
+    .rectangle-circle {
+      @include position(3.2rem, 1.6rem);
+    }
+
+    .rectangle-right {
+      @include position(43.2rem, 27.2rem);
+    }
+
+    .circle {
+      display: none;
+    }
+  }
+}

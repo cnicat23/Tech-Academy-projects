@@ -1,0 +1,44 @@
+.start-now {
+  margin-top: 12rem;
+}
+.footer {
+  background-color: #f8f8f8;
+  margin-top: 0rem;
+}
+.border-grey {
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 10.4rem;
+}
+
+
+.border-grey-faq-pages {
+  width: 100vw;
+  height: 10.4rem;
+}
+.header-line {
+  background-color: var(--Basic-300, #edf1f7);
+  width: 100vw;
+  height: 0.1rem;
+  margin-top: 3rem;
+}
+.frequently-asked-questions {
+  padding-top: 4.8rem;
+}
+
+@media screen and (max-width: 36.1rem) {
+  .start-now {
+    display: none;
+  }
+  .border-grey {
+    height: 8.8rem;
+  }
+
+  
+  .header-line {
+    margin-top: 1.8rem;
+  }
+  .frequently-asked-questions {
+    padding-top: 2.4rem;
+  }
+}

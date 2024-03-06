@@ -1,0 +1,136 @@
+.features-we-provide-headline {
+  padding-top: 9.6rem;
+  text-align: center;
+
+  h1 {
+    font-family: "Euclid-Circular A-Bold600";
+    color: var(--Basic-700, #2e3a59);
+    @include font(3.4rem, 4rem);
+  }
+
+  p {
+    padding-top: 2.4rem;
+    margin: 0 auto;
+    width: 38.4rem;
+    color: var(--Basic-600, #8f9bb3);
+    text-align: center;
+    @include font(1.6rem, 2.4rem);
+  }
+}
+
+.features-we-provide-container {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+  padding: 0 21.6rem;
+  margin-top: 9.6rem;
+
+  .features-we-provide-box {
+    display: flex;
+    gap: 13.6rem;
+  }
+
+  .direct-share {
+    padding-left: 10.4rem;
+  }
+
+  h1 {
+    font-family: "Euclid-Circular A-Bold600";
+    color: var(--Basic-700, #2e3a59);
+    @include font(2.4rem, 3.2rem);
+    padding-top: 6.5rem;
+  }
+
+  p {
+    width: 38.4rem;
+    color: var(--Basic-700, #2e3a59);
+    @include font(1.6rem, 2.4rem);
+    padding-top: 1.6rem;
+  }
+}
+
+.features-we-provide-mobile {
+  display: none;
+}
+
+.see-all-features {
+  text-align: center;
+
+  button {
+    color: var(--text-color-white-ag, #fff);
+    background-color: var(--Info-500---Default, #0095ff);
+    border: 0;
+    border-radius: 0.8rem;
+    padding: 1.4rem 3.6rem;
+    @include font(1.6rem, 2rem);
+    margin-top: 11.2rem;
+  }
+}
+
+@media screen and (max-width: 36.1rem) {
+  .features-we-provide-headline {
+    padding-top: 8rem;
+
+    h1 {
+      @include font(2.4rem, 3.2rem);
+    }
+
+    p {
+      width: 32.8rem;
+    }
+  }
+
+  .features-we-provide-container {
+    display: none;
+  }
+
+  .features-we-provide-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    margin-top: 6.4rem;
+
+    .features-we-provide-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+    }
+
+    .direct-share {
+      padding-left: 0rem;
+
+      img {
+        padding-left: 5.1rem;
+      }
+    }
+
+    img {
+      padding-left: 2.9rem;
+      width: 27rem;
+      height: 22.5rem;
+    }
+
+    h1 {
+      @include font(2rem, 2.8rem);
+      padding-top: 3.2rem;
+      width: 29.6rem;
+      color: var(--Basic-700, #2e3a59);
+      font-family: "Euclid-Circular A-Bold600";
+    }
+
+    p {
+      @include font(1.6rem, 2.4rem);
+      width: 32.8rem;
+      padding-top: 1.6rem;
+      color: var(--Basic-700, #2e3a59);
+    }
+  }
+
+  .see-all-features {
+    text-align: center;
+
+    button {
+      margin-top: 6.4rem;
+    }
+  }
+}

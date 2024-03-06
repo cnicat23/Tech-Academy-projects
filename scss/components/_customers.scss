@@ -1,0 +1,243 @@
+.customers {
+  position: relative;
+  background-color: var(--Danger-400, #ff708d);
+  margin-top: 14.4rem;
+  width: 100vw;
+  height: 34rem;
+
+  .customers-container {
+    margin: 0 22.1rem;
+    @include flex(space-between);
+    padding-top: 8.8rem;
+  }
+
+  span {
+    color: var(--text-color-white-ag, #fff);
+    text-align: center;
+    font-family: "Euclid-Circular A-Bold600";
+    @include font(9.6rem, 12rem);
+  }
+  .number-of-happy-customers {
+    padding: 0 2.2rem;
+  }
+
+  p {
+    color: var(--text-color-white-ag, #fff);
+    @include font(2rem, 2.8rem);
+    width: 16.6rem;
+  }
+
+  .three-half-circle {
+    position: absolute;
+    margin: 0 11.2rem;
+    padding-top: 17.4rem;
+  }
+
+  .half-circle {
+    display: none;
+  }
+}
+
+.world-class-customer-service {
+  padding-top: 9.6rem;
+  @include flex(center, center, $direction: column);
+
+  h1 {
+    color: var(--Basic-700, #2e3a59);
+    font-family: "Euclid-Circular A-Bold600";
+    @include font(3.4rem, 4rem);
+  }
+
+  p {
+    color: var(--Basic-600, #8f9bb3);
+    text-align: center;
+    @include font(1.6rem, 2.4rem);
+    width: 38.4rem;
+    padding-top: 2.4rem;
+  }
+
+  img {
+    padding-top: 5.6rem;
+  }
+}
+
+.customer-satisfaction {
+  position: relative;
+  background-color: var(--Basic-200, #f7f9fc);
+  width: 100vw;
+  height: 51.2rem;
+  margin-top: 6.4rem;
+
+  .customer-satisfaction-wikipedia {
+    @include flex(center, center, $direction: column);
+    padding-top: 6.4rem;
+  }
+
+  .customer-satisfaction-title {
+    width: 59.1rem;
+    color: var(--Basic-700, #2e3a59);
+    font-family: "Euclid-Circular A-Bold600";
+    @include font(3.4rem, 4rem, center);
+  }
+
+  .turn-page {
+    display: flex;
+    gap: 25.6rem;
+    margin-top: 7.2rem;
+  }
+
+  .customer-satisfaction-descr {
+    width: 59.2rem;
+    color: var(--Basic-700, #2e3a59);
+    @include font(1.6rem, 2.4rem, center);
+  }
+}
+
+.customer-ulvin {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 5.6rem;
+
+  .customer-ulvin-title {
+    color: var(--Basic-800, #222b45);
+    @include font(2rem, 2.8rem);
+  }
+
+  .customer-ulvin-descr {
+    color: var(--Basic-600, #8f9bb3);
+    @include font(1.6rem, 2.4rem);
+  }
+}
+
+.points {
+  display: none;
+}
+
+@media screen and (max-width: 36.1rem) {
+  .customers {
+    margin-top: 7.2rem;
+    width: 36rem;
+    height: 64.6rem;
+
+    .customers-container {
+      margin: 0 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 7.2rem;
+      padding-top: 8rem;
+
+      .customer-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    span {
+      @include font(4.8rem, 6.4rem);
+    }
+
+    .number-of-happy-customers {
+      padding: 0 0rem;
+    }
+
+    p {
+      width: 16.6rem;
+      padding-top: 0.8rem;
+    }
+
+    .half-circle {
+      display: block;
+      position: absolute;
+      margin: 0 1.2rem;
+      padding-top: 52.2rem;
+    }
+
+    .three-half-circle {
+      display: none;
+    }
+  }
+
+  .world-class-customer-service {
+    padding-top: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: center;
+
+    h1 {
+      @include font(2.4rem, 3.2rem);
+      width: 32.8rem;
+    }
+
+    p {
+      text-align: center;
+      width: 32.8rem;
+      padding-top: 2.4rem;
+    }
+
+    img {
+      width: 32.8rem;
+      height: 17.5rem;
+      padding-top: 0rem;
+    }
+  }
+
+  .customer-satisfaction {
+    width: 36rem;
+    height: 55.2rem;
+    margin-top: 5.6rem;
+
+    .customer-satisfaction-wikipedia {
+      padding-top: 5.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5.6rem;
+    }
+
+    .customer-satisfaction-title {
+      width: 32.7rem;
+      @include font(2.4rem, 3.2rem, center);
+    }
+
+    .turn-page {
+      display: flex;
+      gap: 0rem;
+      margin-top: 0rem;
+
+      img {
+        display: none;
+      }
+    }
+
+    .customer-satisfaction-descr {
+      width: 32.8rem;
+      text-align: start;
+    }
+  }
+
+  .customer-ulvin {
+    margin-top: 0rem;
+    margin-right: 11.2rem;
+
+    .customer-ulvin-title {
+      @include font(2rem, 2.8rem);
+    }
+
+    .customer-ulvin-descr {
+      @include font(1.6rem, 2.4rem);
+    }
+  }
+}
+
+.points-box {
+  display: flex;
+  justify-content: center;
+
+  .points {
+    display: flex;
+    padding-top: 4rem;
+  }
+}

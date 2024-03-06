@@ -1,0 +1,190 @@
+.creative-blog {
+  padding-top: 7.3rem;
+}
+.creative-blog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .see-all-blogs {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    color: var(--Basic-700, #2e3a59);
+    font-family: "Euclid-Circular A-Bold600";
+    @include font(3.4rem, 4rem, center);
+  }
+
+  p {
+    color: var(--text-color-accent-link, #36f);
+    @include font(1.6rem, 2.4rem);
+  }
+
+  img {
+    padding-left: 0.8rem;
+  }
+}
+
+.creative-blog-image {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.creative-blog-box {
+  margin-top: 6.4rem;
+  padding: 0.8rem 0.8rem 3.2rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  border-radius: 8px;
+  background-color: var(--text-color-white-ag, #fff);
+  box-shadow: 0px 16px 32px 0px rgba(118, 127, 154, 0.08);
+
+  h1 {
+    width: 35rem;
+    color: var(--Basic-700, #2e3a59);
+    font-family: "Euclid-Circular A-Bold600";
+    @include font(2rem, 2.8rem);
+  }
+
+  button {
+    padding: 0.6rem 1.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--Basic-500, #c5cee0);
+    background-color: var(--text-color-white-ag, #fff);
+    color: var(--Basic-700, #2e3a59);
+    @include font(1.4rem 2rem);
+  }
+
+  .creative-blog-button {
+    display: flex;
+    gap: 1.6rem;
+  }
+}
+
+.subscribe-newsletter {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  h1 {
+    color: var(--Basic-700, #2e3a59);
+    @include font(2.4rem, 3.2rem, center);
+  }
+
+  button {
+    color: var(--Basic-100, #fff);
+    @include font(1.4rem, 1.6rem, center);
+    padding: 1.6rem 5.5rem;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--Pimary-500---Default, #36f);
+    margin-left: 0.8rem;
+  }
+}
+.password input {
+  outline: none;
+}
+.input-email {
+  padding: 1.4rem 1.6rem;
+  width: 40.8rem;
+  height: 4.8rem;
+
+  color: var(--Basic-600, #8f9bb3);
+  @include font(1.4rem, 2rem);
+
+  border-radius: 8px;
+  border: 1px solid var(--Basic-400, #e4e9f2);
+  background-color: var(--Basic-200, #f7f9fc);
+}
+
+.see-all-blogs-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 36.1rem) {
+  .creative-blog {
+    position: relative;
+    padding-top: 6.4rem;
+  }
+  .creative-blog-title {
+    .see-all-blogs {
+      display: none;
+    }
+
+    h1 {
+      @include font(2.4rem, 3.2rem, center);
+    }
+  }
+
+  .creative-blog-image {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .creative-blog-box {
+    margin-top: 3.2rem;
+
+    img {
+      width: 31.2rem;
+      height: 20.3rem;
+    }
+    h1 {
+      width: 30rem;
+    }
+
+    button {
+      border-radius: 0;
+    }
+  }
+
+  .see-all-blogs-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5.6rem;
+
+    p {
+      color: var(--text-color-accent-link, #36f);
+      @include font(1.6rem, 2.4rem);
+    }
+
+    img {
+      padding-left: 0.8rem;
+    }
+  }
+
+  .subscribe-newsletter {
+    padding-top: 6.4rem;
+    gap: 3.2rem;
+
+    h1 {
+      width: 30rem;
+    }
+
+    button {
+      padding: 1.6rem 13rem;
+      margin-left: 0rem;
+    }
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .input-email {
+    padding: 1.4rem 1.6rem;
+    width: 32.8rem;
+    height: 4.8rem;
+  }
+}

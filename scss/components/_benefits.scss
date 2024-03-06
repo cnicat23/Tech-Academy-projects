@@ -1,0 +1,201 @@
+.benefits {
+  @include flex(space-between);
+  margin-top: 11.2rem;
+
+  .benefit {
+    color: var(--info-500-default, #0095ff);
+    @include font(2rem, 2.8rem);
+  }
+
+  .benefit-title {
+    font-family: "Euclid-Circular A-Bold600";
+    margin-top: 2.4rem;
+    width: 38.4rem;
+    color: var(--basic-700, #2e3a59);
+    @include font(3.4rem, 4rem);
+  }
+
+  .benefit-descr {
+    margin-top: 2.4rem;
+    width: 38.4rem;
+    color: var(--basic-600, #8f9bb3);
+    @include font(1.6rem, 2.4rem);
+  }
+
+  .benefit-image {
+    margin-right: 10.4rem;
+  }
+}
+
+.benefit-column {
+  position: relative;
+  padding: 16.9rem 12rem 0 12rem;
+
+  h1 {
+    color: var(--Basic-700, #2e3a59);
+    text-align: center;
+    font-size: map-get($fonts, "font-size");
+    line-height: map-get($fonts, "line-height");
+    padding-top: 3.2rem;
+    color: var(--Basic-700, #2e3a59);
+  }
+
+  p {
+    color: var(--Basic-700, #2e3a59);
+    text-align: center;
+    font-size: map-get($fonts2, "font-size");
+    line-height: map-get($fonts2, "line-height");
+    padding-top: 1.6rem;
+  }
+}
+
+.benefit-row-1 {
+  display: flex;
+
+  .time {
+    text-align: center;
+
+    .time-descr {
+      width: 30.2rem;
+    }
+  }
+
+  .seo {
+    text-align: center;
+    margin-left: 11.6rem;
+
+    .seo-graph-descr {
+      width: 23.3rem;
+    }
+  }
+
+  .increase {
+    text-align: center;
+    margin-left: 18.4rem;
+
+    .increase-descr {
+      width: 24.2rem;
+    }
+  }
+}
+
+.benefit-row-2 {
+  @include flex($gap: 4.8rem);
+  margin-top: 9.6rem;
+
+  .social-media {
+    text-align: center;
+
+    .social-media-title {
+      width: 27.9rem;
+    }
+    .social-media-descr {
+      width: 24.2rem;
+    }
+  }
+
+  .support {
+    text-align: center;
+    .support-descr {
+      width: 38rem;
+    }
+  }
+
+  .kpis {
+    text-align: center;
+    .kpis-descr {
+      width: 36rem;
+    }
+  }
+}
+
+@media screen and (max-width: 36.1rem) {
+  .benefits {
+    margin-top: 5.6rem;
+    text-align: center;
+    @include flex(center, center, $direction: column);
+
+    .benefit-title {
+      width: 32.8rem;
+      @include font(2.4rem, 3.2rem);
+    }
+
+    .benefit-descr {
+      margin-top: 1.6rem;
+      width: 32.8rem;
+    }
+
+    .benefit-image {
+      margin: 4rem 0 0 0;
+      width: 32.8rem;
+      height: 18.1rem;
+    }
+  }
+
+  .benefit-column {
+    padding: 8rem 0 0 2.4rem;
+
+    h1 {
+      padding-top: 2.4rem;
+    }
+
+    p {
+      padding-top: 0.8rem;
+    }
+  }
+
+  .benefit-row-1 {
+    @include flex($gap: 5.6rem, $direction: column);
+
+    .time {
+      text-align: center;
+
+      .time-descr {
+        width: 31.2rem;
+      }
+    }
+
+    .seo {
+      text-align: center;
+      margin-left: 0rem;
+
+      .seo-graph-descr {
+        width: 31.2rem;
+      }
+    }
+
+    .increase {
+      text-align: center;
+      margin-left: 0rem;
+
+      .increase-descr {
+        width: 31.2rem;
+      }
+    }
+  }
+
+  .benefit-row-2 {
+    @include flex($gap: 4.8rem);
+    margin-top: 5.6rem;
+
+    .social-media {
+      text-align: center;
+
+      .social-media-title {
+        width: 23.2rem;
+        margin: 0 auto;
+      }
+      .social-media-descr {
+        width: 31.2rem;
+      }
+    }
+
+    .support {
+      display: none;
+    }
+
+    .kpis {
+      display: none;
+    }
+  }
+}

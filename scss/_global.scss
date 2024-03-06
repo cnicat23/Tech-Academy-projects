@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Euclid-Circular A-Regular";
+  font-size: 10px;
+}
+@font-face {
+  font-family: Euclid-Circular A-Bold600;
+  src: url(../assets/fonts/Euclid\ Circular\ A\ Bold.ttf);
+}
+@font-face {
+  font-family: Euclid-Circular A-Regular;
+  src: url(../assets/fonts/Euclid\ Circular\ A\ Regular.ttf);
+}

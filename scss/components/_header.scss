@@ -1,0 +1,88 @@
+.container {
+  padding: 0 11.2rem;
+  margin: 0 auto;
+}
+.header {
+  @include flex(space-between, center);
+  margin-top: 2.2rem;
+}
+.header i {
+  display: none;
+}
+.header-title {
+  margin-left: 1.6rem;
+  @include font(2.4rem, 3.2rem);
+  font-size: map-get($fonts, font-size);
+}
+.header-list {
+  @include flex($gap: 4.8rem);
+  @include font(1.6rem, 2.4rem);
+  margin-left: 17.1rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.header-image-button {
+  display: flex;
+}
+.header-head {
+  @include flex($align: center);
+}
+.header-demo {
+  @include flex(center, center);
+  background-color: #fff;
+  margin-left: 2.4rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--basic-500, #c5cee0);
+
+  padding: 1.2rem 2.8rem;
+  @include font(1.4rem, 1.6rem);
+}
+.header-buy {
+  @include flex(center, center);
+  background-color: var(--danger-500-default, #ff3d71);
+  color: var(--text-color-white-ag, #fff);
+  margin-left: 0.8rem;
+  border-radius: 0.8rem;
+  border: 0;
+
+  padding: 1.2rem 2.8rem;
+  @include font(1.4rem, 1.6rem);
+}
+
+@media screen and (max-width: 36.1rem) {
+  .container {
+    padding: 0 1.6rem;
+  }
+  .header {
+    margin-top: 1.6rem;
+    @include flex(space-between, center);
+  }
+  .header i {
+    display: block;
+  }
+  .header-image {
+    margin-left: 1.5rem;
+    width: 2.62rem;
+    height: 3.6rem;
+  }
+  .header-title {
+    margin-left: 1rem;
+    @include font(2rem, 1.6rem);
+  }
+  .header-list {
+    display: none;
+  }
+  .header-demo {
+    display: none;
+  }
+  .header-buy {
+    @include flex(center, center);
+    margin-left: 1.5rem;
+
+    padding: 1rem 1.2rem;
+    @include font(1.2rem, 1.4rem);
+  }
+}

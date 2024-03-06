@@ -1,0 +1,26 @@
+@mixin flex($justify: null, $align: null, $gap: null, $direction: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+  flex-direction: $direction;
+}
+@mixin font($size: null, $line-height: null, $text-align: null) {
+  font-size: $size;
+  line-height: $line-height;
+  text-align: $text-align;
+}
+@mixin position(
+  $top: null,
+  $left: null,
+  $z-index: null,
+  $right: null,
+  $bottom: null
+) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  z-index: $z-index;
+  right: $right;
+  bottom: $bottom;
+}
